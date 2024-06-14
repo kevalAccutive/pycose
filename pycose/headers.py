@@ -73,6 +73,12 @@ class KIDContext(CoseHeaderAttribute):
 
 
 @CoseHeaderAttribute.register_attribute()
+class Signer(CoseHeaderAttribute):
+    identifier = 11
+    fullname = "SIGNER"
+
+
+@CoseHeaderAttribute.register_attribute()
 class X5bag(CoseHeaderAttribute):
     identifier = 32
     fullname = "X5_BAG"
